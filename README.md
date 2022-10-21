@@ -21,7 +21,7 @@ class Hangman:
     terrace_area: int
     facades_number: int
     building_state: str"""
-
+```
 
 ## The program was tested only on Python 3.10.4
 I've made a requirements file for the requirements
