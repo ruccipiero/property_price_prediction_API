@@ -9,4 +9,4 @@ WORKDIR /app
 # install all the requirements
 RUN pip install -r requirements.txt
 # run the API in the 
-CMD uvicorn app:app --host:0.0.0.0
+CMD uvicorn app:app --host 0.0.0.0 
