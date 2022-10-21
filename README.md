@@ -4,8 +4,8 @@ This API is designed to predict a price starting from a json file
 To have it working you will have to download the full folder 
 here is an exemple of the input: 
 ```
-class Hangman:
-  """    area: int
+  {'data':
+    {area: int
     property_type: str
     rooms_number: int
     zip_code: int 
@@ -20,7 +20,9 @@ class Hangman:
     terrace: bool
     terrace_area: int
     facades_number: int
-    building_state: str"""
+    building_state: str
+    }
+    }
 ```
 
 ## The program was tested only on Python 3.10.4
