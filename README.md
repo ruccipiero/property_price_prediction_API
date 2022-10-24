@@ -1,6 +1,7 @@
 # Properties price prediction API
 
-This API is designed to predict a price starting from a json file 
+This API is designed to predict a price starting from a json file.
+
 To have it working you will have to download the full folder 
 here is an exemple of the input: 
 ```
