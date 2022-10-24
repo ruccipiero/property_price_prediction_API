@@ -17,9 +17,9 @@ returns a sting with the input template
 
 takes the json file as an input and returns the prediction price with the following format:
 
-``` {"prediction:": actual price as a int } ```
+``` {"prediction:": predicted price as a int } ```
 
-## What kind of input is expected?
+## What kind of input is expected for POST /predict?
 Here is a template of the json file format that is expected as an input: 
 ```
   {'data':
@@ -43,8 +43,8 @@ Here is a template of the json file format that is expected as an input:
     }
 ```
 
-## What is the output of each route in case of error?
-It usually works but it may give a 404 error if the api is not working.
+### What is the output of each route in case of error?
+It usually works but it may give {"detail":"Not Found"} error if the method is not well expressed
 
 For the POST /predict method:
 
