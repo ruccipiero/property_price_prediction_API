@@ -5,7 +5,7 @@ import predict.prediction as pp
 import preprocessing.cleaning_data as pc
 from pydantic import BaseModel
 from typing import Union
-
+import uvicorn
 
 #raise HTTPException
 app = FastAPI()
@@ -66,3 +66,5 @@ async def predict(item: Item1):
     return {"prediction:": price}
 
 
+if __name__ == "__main__":
+    uvicorn.run(app, host="127.0.0.1", port=5000)

@@ -20,7 +20,7 @@ def predict(clean_entry):
         return results
     # Apartment
     if df['property_type'][0] == 'APARTMENT':
-        feature_names = [ 'area','rooms_number',  'equipped_kitchen', 'furnished',
+        feature_names = [ 'zip_code', 'area','rooms_number',  'equipped_kitchen', 'furnished',
         'open_fire', 'terrace', 'terrace_area',  'garden', 'garden_area',
         'facades_number', 'swimming_pool', 'building_state'] 
         X = df[feature_names]
