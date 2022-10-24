@@ -6,6 +6,8 @@ RUN mkdir /app
 COPY . /app
 # set app as cwd
 WORKDIR /app
+# update pip
+RUN pip install --upgrade pip
 # install all the requirements
 RUN pip install -r requirements.txt
 # run the API
